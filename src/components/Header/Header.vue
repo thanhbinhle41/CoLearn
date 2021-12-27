@@ -62,16 +62,16 @@ export default {
 
     /* Header content */
     .header-content .logo {
-    
+        cursor: pointer;
     }
 
     .header-content .menu-btn {
-    
+        cursor: pointer;
     }
 
     /* List Menu */
     .header-content .list-menu {
-
+        cursor: pointer;
     }
 
     .active-menu-list {
@@ -90,9 +90,13 @@ export default {
         text-align: center;
     }
 
+    .list-menu .menu-items:hover {
+        background-color: #FFA216;
+    }
+
     /* USER */
     .header-content .user{
-        
+        cursor: pointer;
     }
 
     .user .notification {

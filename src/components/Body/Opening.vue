@@ -1,7 +1,25 @@
 <template>
     <div class="opening-container">
+        <div class="opening-options">
+            <div class="options-list">
+                <div class="options-item">Lớp học</div>
+                <div class="options-item active">Gia sư 1 kèm 1</div>
+            </div>
+            <div class="video-btn">
+                <img src="/public/assets/Body/Opening/video.png" alt="">
+                <span>Lớp của tôi</span>
+            </div>
+        </div>
         <div class="opening-content">
             <img src="/public/assets/Body/Opening/banner.png" alt="">
+            <div class="opening-title">
+                <p>Gia sư CoLearn</p> 
+                <p>Hỗ trợ mùa thi </p>
+                <p>Nâng cao thành tích</p>
+            </div>
+            <div class="opening-btn">
+                <span>Học gia sư ngay</span>
+            </div>
         </div>
         <div class="opening-description">
             <div class="title">
@@ -49,21 +67,102 @@ export default {
 
 <style>
 
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Mulish:ital,wght@0,400;0,700;0,800;0,900;1,400&family=Raleway:ital,wght@0,700;1,400;1,500&family=Roboto+Slab:wght@900&family=Roboto:wght@400;700&display=swap');
 
 .opening-container {
     width: 100%;
     margin-top: 64px;
 }
 
+/* Options */
+.opening-container .opening-options {
+    display: flex;
+    padding: 0 289px;
+    justify-content: space-between;
+}
+
+    .opening-options .options-list {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+        .options-list .options-item {
+            font-size: 16px;
+            font-weight: 400;
+            margin-right: 50px;
+        }
+
+        .options-list .active {
+            font-weight: 500;
+            color: #FFA216;
+            border-bottom: 4px solid #FFA216;
+        }
+
+    .opening-options .video-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 151px;
+        height: 39px;
+        background: #FFA216;
+        border-radius: 19.5px;
+        margin-bottom: 8px;
+    }
+
+    .opening-options .video-btn span {
+        font-weight: 500;
+        font-size: 16px;
+        color: #fff;
+        margin-left: 14px;
+    }
+
+
+
 /* Content */
 .opening-container .opening-content {
+    position: relative;
+    cursor: pointer;
     
 }
 
 .opening-container .opening-content img {
     width: 100%;
 }
+
+    .opening-content .opening-title {
+        position: absolute;
+        top: 166px;
+        left:270px;
+    }
+
+    .opening-content .opening-title p {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        font-size: 48px;
+        color: #fff;
+    }
+
+    .opening-content .opening-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: 273px;
+        bottom: 120px;
+        width: 238px;
+        height: 68px;
+        background: #FFA216;
+        border-radius: 34px;
+        cursor: pointer;
+    }
+
+    .opening-content .opening-btn span {
+        font-family: 'Mulish', sans-serif;
+        font-weight: 800;
+        font-size: 24px;
+        color: white;
+    }
 
 /* Description */
 .opening-container .opening-description {

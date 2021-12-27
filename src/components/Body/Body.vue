@@ -4,6 +4,7 @@
         <Reason/>
         <Tutor/>
         <StudyPack/>
+        <SignUpForm/>
     </div>
 </template>
 
@@ -12,6 +13,7 @@ import Opening from './Opening.vue'
 import Reason from './Reason.vue'
 import Tutor from './Tutor.vue'
 import StudyPack from './StudyPack.vue'
+import SignUpForm from './SignUpForm.vue' 
 
 export default {
     name: 'Body',
@@ -24,7 +26,8 @@ export default {
         Opening,
         Reason,
         Tutor,
-        StudyPack
+        StudyPack,
+        SignUpForm
     }
 }
 </script>

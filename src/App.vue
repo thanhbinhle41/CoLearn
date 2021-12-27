@@ -2,6 +2,7 @@
   <div id="app">
     <Header/>
     <Body/>
+    <Footer/>
   </div>
 </template>
 
@@ -10,6 +11,7 @@
 
 import Header from './components/Header/Header.vue'
 import Body from './components/Body/Body.vue'
+import Footer from './components/Footer/Footer.vue'
 
 export default {
   name: 'app',
@@ -20,7 +22,8 @@ export default {
   }, 
   components: {
     Header,
-    Body
+    Body,
+    Footer
   }
 }
 </script>
@@ -38,7 +41,6 @@ export default {
 
 #app {
   font-family: 'Roboto', sans-serif;
-  height: 9000px;
 }
 
 .title_1 {
